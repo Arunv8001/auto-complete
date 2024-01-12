@@ -20,3 +20,4 @@ npm run dev
 
 - [React](https://reactjs.org/) - A JavaScript library for building user interfaces
 - [TypeScript](https://www.typescriptlang.org/) - TypeScript adds additional syntax to JavaScript to support a tighter integration with your editor. Catch errors early in your editor.
+- [Vite](https://vitejs.dev/guide/) - A JavaScript library is a build tool that aims to provide a faster and leaner development experience
