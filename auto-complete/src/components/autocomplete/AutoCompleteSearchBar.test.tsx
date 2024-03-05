@@ -1,5 +1,4 @@
-import { act, fireEvent, getByRole, getByTestId, render, screen, waitFor} from "@testing-library/react";
-import axios from 'axios';
+import {  fireEvent, render, screen} from "@testing-library/react";
 import userEvent from '@testing-library/user-event'
 import { describe, it, expect, vi } from "vitest";
 import AutoCompleteSearchBar from "./AutoCompleteSearchBar";
