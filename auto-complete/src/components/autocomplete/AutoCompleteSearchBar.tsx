@@ -21,6 +21,7 @@ const AutoCompleteSearchBar = () => {
       setProducts(data);
     };
     fetchData();
+    inputRef.current?.focus()
   }, []);
 
   /**
@@ -82,7 +83,9 @@ const AutoCompleteSearchBar = () => {
         value={query}
         ref={inputRef}
         placeholder="Enter your search products"
+        aria-label="search-input-field"
       />
+     {query !== "" && searchResults.length === 0 &&  <p>You are searching for <b>{inputRef.current?.value}</b> was not found :(</p>} 
       {query !== "" && searchResults.length > 0 && (
         <ProductLists
           query={query}
